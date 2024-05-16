@@ -144,6 +144,7 @@ Header
 }
 .pc-navar {
     float: right;
+    padding-top: 40px;
 }
 .mobile-navbar {
     display: none;
@@ -152,10 +153,12 @@ Header
     float: left;
 }
 .logo {
-    position: absolute;
-    top: 10px;
-    color: white;
+    position: relative;
+    top: 27.5px;
+    color: #fff;
     left: 25px;
+    font-size: 28px;
+    font-weight: 900;
 }
 .appointment {
     background: #fff04b;
@@ -170,6 +173,13 @@ Header
 }
 .appointment:hover {
     background: #dccc18;
+}
+.about-us {
+    color: #fff;
+    margin-left: 75px;
+    top: 35px;
+    position: relative;
+    font-weight: 100;
 }
 
 /*
@@ -236,7 +246,7 @@ Mobile
         display: block;
     }
     .fa-bars {
-        color: white;
+        color: #fff;
         scale: 2.5;
         position: absolute;
         right: 10%;
