@@ -4,23 +4,67 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
+
+        <title>Med</title>
+
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+
         <link rel="stylesheet" href="style.css">
+
+        <script src="https://kit.fontawesome.com/eade4dcf70.js" crossorigin="anonymous"></script>
+
     </head>
     <body>
 
-        <form action="https://api.web3forms.com/submit" method="POST" class="form">
+        <!--Form-->
 
-            <input type="hidden" name="access_key" value="ca905848-0b91-4285-9ebf-42f5cf876f67">
-            <input class="form-name" type="text" name="name" placeholder="Name" required>
-            <input class="form-number" type="text" name="phone number" placeholder="Phone Number" required>
-            <textarea class="form-details" name="message" placeholder="Details" required></textarea>
+        <div class="shadow" id="shadow" onclick="toggleForm()"></div>
 
-            <button class="form-submit" type="submit" onclick="click()">Submit</button>
-        </form>
+        <div class="form-wrapper" id="form">
+                            
+            <form action="https://api.web3forms.com/submit" method="POST" class="form">
+
+                <input type="hidden" name="from_name" value="Dentist Apointment">
+                <input type="hidden" name="redirect" value="http://127.0.0.1:5500/form-submitted.html">
+                <input type="hidden" name="access_key" value="ca905848-0b91-4285-9ebf-42f5cf876f67">
+                <input class="form-name" type="text" name="subject" placeholder="Име" required>
+                <input class="form-number" type="text" name="Телефонен Номер" placeholder="Телефонен Номер" required>
+                <textarea class="form-details" name="Детайли" placeholder="Детайли" required></textarea>
+
+                <button class="form-submit" type="submit">Изпращане</button>
+
+                <i class="fas fa-times" onclick="toggleForm()"></i>
+
+            </form>
+        </div>
+
+        <!--Header-->
+
+        <header class="header">
+            <div class="header-content">
+                <div class="logo-c">
+                    <h2 class="logo">SofiaDoc</h2>
+                </div>
+                <nav class="pc-navbar">
+                    <button class="appointment" id="appointment-button" onclick="toggleForm()">Запазване на Час</button>
+                </nav>
+                <nav class="mobile-navbar">
+                    <i class="fa-solid fa-bars" onclick="toggleForm()"></i>
+                </nav>
+            </div>
+        </header>
         
+        <!--Footer-->
+
+        <footer class="footer">
+            <div class="footer-content">
+
+                
+
+            </div>
+        </footer>
+
         <script src="script.js" async defer></script>
     </body>
 </html>
