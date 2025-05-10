@@ -1,10 +1,21 @@
+:root {
+    --header-text: #0066cc;
+    --shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    --button: #ffcc00;
+    --button-hover: #e9bb00;
+    --header-hover: #035eb8;
+}
+
+* {
+    box-sizing: border-box;
+}
 html,
 body {
     height: 100%;
 }
 body {
     margin: 0;
-    font-family: sans-serif;
+    font-family: 'Segoe UI', sans-serif;
 }
 ::-webkit-scrollbar {
     display: none;
@@ -16,6 +27,7 @@ body {
     background-color: #000;
     opacity: 0.5;
     display: none;
+    z-index: 2;
 }
 
 /*
@@ -49,44 +61,49 @@ textarea:focus {
     gap: 10px;
 }
 .form-wrapper {
-    display: none;
+    display: flex;
+    transform-origin: center center;
+    transform: translate(-50%, -50%) scale(0);
+    transition: transform 0.2s ease;
     justify-content: center;
     margin-top: 100px;
     background-color: #fff;
     position: absolute;
     top: 40%;
     left: 50%;
-    transform: translate(-50%, -50%);
     width: 500px;
     height: 550px;
     border-radius: 20px;
+    z-index: 3;
 }
 .form-name {
     height: 50px;
-    width: 350px;    
+    width: 100%;    
     font-size: 20px;
     margin-top: 70px;
 }
 .form-number {
     height: 50px;
-    width: 350px;    
+    width: 100%;    
     font-size: 20px;
 }
 .form-details {
-    width: 350px;
+    width: 100%;
     height: 200px;
     font-size: 20px;
 }
 .form-submit {
     width: 370px;
     height: 40px;
-    background: #fff04b;
+    background: var(--button);
     border: none;
     border-radius: 6px;
-    font-size: 20px;    
+    font-size: 14px;    
 }
 .form-submit:hover {
-    background-color: #dccc18;
+    background-color: var(--button-hover);
+    transition: all 0.1s ease;
+    scale: 1.01;
 }
 .fa-times {
     scale: 2;
@@ -104,7 +121,7 @@ Form Appear/Disappear
 */
 
 .form-wrapper.active {
-    display: flex;
+    transform: translate(-50%, -50%) scale(1);
 }
 .shadow.active {
     display: block;
@@ -139,8 +156,8 @@ Header
 */
 
 .header {
-    background-color: #333;
-    height: 5rem;
+    height: 80px;
+    box-shadow: var(--shadow);
 }
 .pc-navbar {
     float: right;
@@ -155,31 +172,44 @@ Header
 .logo {
     position: absolute;
     top: 2.25%;
-    color: #fff;
+    color: var(--header-text);
     left: 25px;
     font-size: 28px;
     font-weight: 900;
 }
+.logo:hover {
+    color: var(--header-hover);
+    transition: all 0.1s ease;
+    scale: 1.01;
+}
 .appointment {
-    background: #fff04b;
+    background: var(--button);
     border: none;
     border-radius: 6px;
     height: 50px;
-    font-size: 18px;
+    font-size: 14px;
+    padding: 0 25px 0 25px;;
     cursor: pointer;
     position: absolute;
     top: 15px;
     right: 15px;
 }
 .appointment:hover {
-    background: #dccc18;
+    background: var(--button-hover);
+    transition: all 0.1s ease;
+    scale: 1.01;
 }
 .about-us {
-    color: #fff;
+    color: var(--header-text);
     left: 200px;
-    top: 4.25%;
+    top: 4%;
     position: absolute;
-    font-weight: 600;
+    font-weight: 700;
+}
+.about-us:hover {
+    color: var(--header-hover);
+    transition: all 0.1s ease;
+    scale: 1.02;
 }
 
 /*
@@ -230,7 +260,7 @@ Mobile
         width: 100%;
     }
     .form-submit {
-        width: 105%;
+        width: 100%;
     }
 
     /*
