@@ -140,9 +140,9 @@ Header
 
 .header {
     background-color: #333;
-    height: 80px;
+    height: 5rem;
 }
-.pc-navar {
+.pc-navbar {
     float: right;
     padding-top: 40px;
 }
@@ -153,8 +153,8 @@ Header
     float: left;
 }
 .logo {
-    position: relative;
-    top: 27.5px;
+    position: absolute;
+    top: 2.25%;
     color: #fff;
     left: 25px;
     font-size: 28px;
@@ -176,10 +176,10 @@ Header
 }
 .about-us {
     color: #fff;
-    margin-left: 75px;
-    top: 35px;
-    position: relative;
-    font-weight: 100;
+    left: 200px;
+    top: 4.25%;
+    position: absolute;
+    font-weight: 600;
 }
 
 /*
