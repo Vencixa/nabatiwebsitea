@@ -1,8 +1,8 @@
 :root {
     --header-text: #0066cc;
-    --shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-    --button: #ffcc00;
-    --button-hover: #e9bb00;
+    --shadow: 0 4px 12px rgba(0, 0, 0, 0.35);
+    --button: #0066cc;
+    --button-hover: #0363b8;
     --header-hover: #035eb8;
 }
 
@@ -156,8 +156,22 @@ Header
 */
 
 .header {
-    height: 80px;
+    position: fixed;
+    width: 100%;
+    height: 5rem;
+    background: transparent;
+    transition: all 0.3s ease;
+}
+.header.scrolled {
+    transition: all 0.3s ease;
+    background: #fff;
     box-shadow: var(--shadow);
+}
+.header a {
+    color: #fff;
+}
+.header.scrolled a {
+    color: var(--header-text);
 }
 .pc-navbar {
     float: right;
@@ -171,11 +185,12 @@ Header
 }
 .logo {
     position: absolute;
-    top: 2.25%;
+    top: 1.1rem;
     color: var(--header-text);
-    left: 25px;
+    left: 2rem;
     font-size: 28px;
     font-weight: 900;
+    transition: color 0.3s ease;
 }
 .logo:hover {
     color: var(--header-hover);
@@ -186,13 +201,14 @@ Header
     background: var(--button);
     border: none;
     border-radius: 6px;
-    height: 50px;
+    height: 3rem;
     font-size: 14px;
-    padding: 0 25px 0 25px;;
+    padding: 0 25px 0 25px;
+    color: #fff;
     cursor: pointer;
     position: absolute;
-    top: 15px;
-    right: 15px;
+    top: 1rem;
+    right: 1rem;
 }
 .appointment:hover {
     background: var(--button-hover);
@@ -201,8 +217,9 @@ Header
 }
 .about-us {
     color: var(--header-text);
-    left: 200px;
-    top: 4%;
+    transition: color 0.3s ease;
+    left: 12rem;
+    top: 1.8rem;
     position: absolute;
     font-weight: 700;
 }
@@ -214,15 +231,99 @@ Header
 
 /*
 
+Hero
+
+*/
+
+.hero {
+    position: relative;
+    top: -5rem;
+    z-index: -21;
+}
+.hero-image {
+    width: 100%;
+    display: block;
+    height: auto;
+    object-fit: cover;
+}
+.hero-wrapper {
+    position: relative;    
+    width: 100%;       
+
+}
+.hero-shadow {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+    pointer-events: none;
+    z-index: 1;
+}
+.hero-content {
+    place-items: center;
+}
+.services {
+    position: absolute;
+    top: 25rem;
+    right: 20rem;
+    height: 5rem;
+    width: 14rem;
+    border-radius: 6px;
+    background: var(--button);
+    cursor: pointer;
+}
+.services:hover {
+    background: var(--button-hover);
+    transition: all 0.1s ease;
+    scale: 1.01;
+}
+.services-button {
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hero-text-container {
+    position: absolute;
+    top: 0;
+    width: 50%;
+}
+.hero-text {
+    color: #fff;
+    top: 14rem;
+    left: 3rem;
+    font-size: 42px;
+    position: absolute;
+    z-index: 2;
+    font-weight: 900;
+}
+.hero-text2 {
+    color: #fff;
+    top: 19rem;
+    left: 3rem;
+    font-size: 24px;
+    position: absolute;
+    z-index: 2;
+    font-weight: 500;
+}
+
+/*
+
 Footer
 
 */
 
 .footer-content {
-    background-color: #333;
+    background-color: #fff;
     width: 100%;
-    height: 200px;
-    margin-top: 900px;
+    height: 5rem;
+    margin-top: 1rem;
+    box-shadow: 0 -4px 12px rgba(0, 0, 0, 0.35);
 }
 
 /*
