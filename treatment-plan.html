@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+        <title>Med</title>
+
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="style.css">
+
+        <script src="https://kit.fontawesome.com/eade4dcf70.js" crossorigin="anonymous"></script>
+
+    </head>
+    <body>
+
+        <!--Form-->
+
+        <div class="shadow" id="shadow" onclick="toggleForm()"></div>
+
+        <div class="form-wrapper" id="form">
+                            
+            <form action="https://api.web3forms.com/submit" method="POST" class="form">
+
+                <input type="hidden" name="from_name" value="Dentist Apointment">
+                <input type="hidden" name="redirect" value="https://vencixa.github.io/nabatiwebsitea/form-submitted.html">
+                <input type="hidden" name="access_key" value="ca905848-0b91-4285-9ebf-42f5cf876f67">
+                <input class="form-name" type="text" name="subject" placeholder="Име" required>
+                <input class="form-number" type="text" name="Телефонен Номер" placeholder="Телефонен Номер" required>
+                <textarea class="form-details" name="Детайли" placeholder="Детайли" required></textarea>
+
+                <button class="form-submit" type="submit">Изпращане</button>
+
+                <i class="fas fa-times" onclick="toggleForm()"></i>
+
+            </form>
+        </div>
+
+        <!--Header-->
+
+        <header class="header scrolled" id="header">
+            <div class="header-content">
+                <div class="logo-c">
+                    <a href="index.html" class="logo">SofiaDoc</a>
+                </div>
+                <nav class="pc-navbar">
+
+                    <button class="appointment" id="appointment-button" onclick="toggleForm()">Запазване на Час</button>
+                    <a href="" class="about-us">За нас</a>
+                    <a href="services.html" class="services-header">Услуги</a>
+
+                </nav>
+                <nav class="mobile-navbar" onclick="toggleDropdown()">
+                    <i class="fa-solid fa-bars" onclick="toggleForm()"></i>
+                </nav>
+            </div>
+        </header>
+
+        <!--Main-->
+
+        <img src="images/services/dentalexamination.png" class="explanation-image" alt="">
+
+        <p class="main-text-explanation">Преглед и план на лечение</p>
+
+        <div class="explanation-wrapper">
+
+            <p class="explanation">Зъболекарски преглед: При първична или рутинна проверка зъболекарят прави детайлен преглед на зъбите, венците и цялата устна кухина
+            . Това включва оглед по зъбите и венците, както и евентуално рентгенови снимки. Редовните профилактични прегледи (обикновено на всеки 6 месеца) помагат да се установят и предотвратят малки проблеми навреме
+            . По време на прегледа зъболекарят може да:</p>
+
+            <ul class="explanation">
+                <li>направи ранна диагностика на кариеси;</li>
+                <li>анализира рентгенови снимки (за по-добра оценка на зъбите и костта);</li>
+                <li>изготви индивидуален план за лечение (описващ всички необходими процедури);</li>
+                <li>обсъди с пациента възможните лечебни подходи и материали;</li>
+            </ul>
+
+            <p class="explanation">План на лечение: След прегледа зъболекарят ще обсъди с вас всички намерени отклонения или нужди. На тази база се съставя подробен план за лечение. В него са включени всички препоръчани процедури, тяхната последователност и приблизителната цена. Така имате ясна представа какво да очаквате – например колко посещения и какви манипулации ще са необходими. Планът обикновено включва:</p>
+
+            <ul class="explanation">
+                <li>Препоръчани процедури (например пломби, почистване на зъбен камък, коронки, импланти и др.);</li>
+                <li>Брой посещения (етапи на лечението);</li>
+                <li>Приблизителни разходи (обща стойност и цена на отделните процедури);</li>
+            </ul>
+
+            <p class="explanation">Основни стъпки в процеса:</p>
+
+            <ol type="1" class="explanation">           
+                <li>Kлиничен преглед: Зъболекарят оглежда устната кухина, зъбите и венците, прави нужните снимки и събира информация за здравословното ви състояние.</li>
+                <li>Диагностика: На база прегледа се идентифицират всички проблеми (напр. кариеси, гингивит, абразия).</li>
+                <li>Обсъждане на варианти: Лекарят обяснява различните възможности за лечение, ползите и рисковете при всеки метод, и се взема решение съвместно с пациента.</li>
+                <li>Съставяне на план: Изготвя се персонализиран план за лечение, който включва всички необходими стъпки и приблизителния график.</li>
+            </ol>
+
+            <p class="explanation">Ползи за пациента:</p>
+
+            <ul class="explanation">
+                <li>Яснота и контрол: Пациентът знае какво лечение го очаква, колко посещения ще са нужни и каква е приблизителната цена, което улеснява планирането.</li>
+                <li>Спокойствие и сигурност: Предварителното обсъждане на плана намалява страхът от неизвестното, защото няма изненади по време на лечението.</li>
+                <li>Дългосрочна грижа: Ранната диагностика и планираното лечение помагат да се отстранят проблемите навреме и да се избегнат по-сериозни усложнения в бъдеще. Това спестява болка, дискомфорт и допълнителни разходи</li>
+            </ul>
+
+        </div>
+
+        <!--Footer-->
+
+        <footer class="footer">
+            <div class="footer-content">
+
+                <p>&copy; 2025 SofiaDoc. All rights reserved.</p>
+
+            </div>
+        </footer>
+
+        <script src="service-script.js" async defer></script>
+    </body>
+</html>

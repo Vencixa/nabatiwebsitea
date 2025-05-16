@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+        <title>Med</title>
+
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="style.css">
+
+        <script src="https://kit.fontawesome.com/eade4dcf70.js" crossorigin="anonymous"></script>
+
+    </head>
+    <body>
+
+        <!--Form-->
+
+        <div class="shadow" id="shadow" onclick="toggleForm()"></div>
+
+        <div class="form-wrapper" id="form">
+                            
+            <form action="https://api.web3forms.com/submit" method="POST" class="form">
+
+                <input type="hidden" name="from_name" value="Dentist Apointment">
+                <input type="hidden" name="redirect" value="https://vencixa.github.io/nabatiwebsitea/form-submitted.html">
+                <input type="hidden" name="access_key" value="ca905848-0b91-4285-9ebf-42f5cf876f67">
+                <input class="form-name" type="text" name="subject" placeholder="Име" required>
+                <input class="form-number" type="text" name="Телефонен Номер" placeholder="Телефонен Номер" required>
+                <textarea class="form-details" name="Детайли" placeholder="Детайли" required></textarea>
+
+                <button class="form-submit" type="submit">Изпращане</button>
+
+                <i class="fas fa-times" onclick="toggleForm()"></i>
+
+            </form>
+        </div>
+
+        <!--Header-->
+
+        <header class="header scrolled" id="header">
+            <div class="header-content">
+                <div class="logo-c">
+                    <a href="index.html" class="logo">SofiaDoc</a>
+                </div>
+                <nav class="pc-navbar">
+
+                    <button class="appointment" id="appointment-button" onclick="toggleForm()">Запазване на Час</button>
+                    <a href="" class="about-us">За нас</a>
+                    <a href="services.html" class="services-header">Услуги</a>
+
+                </nav>
+                <nav class="mobile-navbar" onclick="toggleDropdown()">
+                    <i class="fa-solid fa-bars" onclick="toggleForm()"></i>
+                </nav>
+            </div>
+        </header>
+
+        <!--Main-->
+
+        <div class="content-wrapper">
+
+            <p class="main-text">Зъболекарски Услуги</p>
+
+            <div class="image-wrapper">
+                <div class="item">
+                    <img src="images/services/dentalexamination.png" alt="">
+                    <a href="treatment-plan.html" class="service-label">Преглед и план на лечение</a>
+                </div>
+                <div class="item">
+                    <img src="images/services/prophylaxis.png" alt="">
+                    <a href="prevention.html" class="service-label">Профилактика</a>
+                </div>
+                <div class="item">
+                    <img src="images/services/dentalcavity.png" alt="">
+                    <a href="conservative-dentistry.html" class="service-label">Консервативно зъболечение</a>
+                </div>
+                <div class="item">
+                    <img src="images/services/teethwhitening.png" alt="">
+                    <a href="aesthetic-dentistry.html" class="service-label">Естетична стоматология</a>
+                </div>   
+            </div>
+ 
+            <div class="image-wrapper">
+                <div class="item">
+                    <img src="images/services/rootcanal.png" alt="">
+                    <a href="endodontics.html" class="service-label">Ендодентия</a>
+                </div>
+                <div class="item">
+                    <img src="images/services/dentalcrown.png" alt="">
+                    <a href="prosthetics.html" class="service-label">Протетика</a>
+                </div>
+                <div class="item">
+                    <img src="images/services/toothextraction.png" alt="">
+                    <a href="oral-surgery.html" class="service-label">Орална хирургия</a>
+                </div>
+                <div class="item">
+                    <img src="images/services/rootplaning.png" alt="">
+                    <a href="pariodontology.html" class="service-label">Пародонтология</a>
+                </div>
+            </div>
+
+            <div class="last-image-wrapper">
+                <div class="item">
+
+                    <img src="images/services/implant.png" alt="">
+                    <a href="implantology.html" class="service-label">Имплантология</a>
+
+                </div>
+            </div>
+        </div>
+
+        <!--Footer-->
+
+        <footer class="footer">
+            <div class="footer-content">
+
+                <p>&copy; 2025 SofiaDoc. All rights reserved.</p>
+
+            </div>
+        </footer>
+
+        <script src="service-script.js" async defer></script>
+    </body>
+</html>
