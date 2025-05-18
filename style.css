@@ -1,5 +1,7 @@
 :root {
     --header-text: #0066cc;
+    --text: #333;
+    -text-hover: #000;
     --shadow: 0 4px 12px rgba(0, 0, 0, 0.35);
     --button: #0066cc;
     --button-hover: #0363b8;
@@ -409,7 +411,7 @@ Services
 */
 
 .main-text {
-    color: var(--header-text);
+    color: var(--text);
     margin-top: 8rem;
     font-size: 36px;
     font-weight: 500;
@@ -419,10 +421,10 @@ Services
     margin-top: 1rem;
     font-size: 1.1rem;
     font-weight: 600;
-    color: var(--header-text);
+    color: var(--text);
 }
 .service-label:hover {
-    color: var(--header-hover);
+    color: var(--text-hover);
     transition: all 0.1s ease;
     font-size: 1.12rem;
 }
@@ -430,7 +432,7 @@ Services
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 4.4rem;
-    padding: 2rem 8rem;
+    padding: 1.5rem 8rem;
 }
 .image-wrapper img{
     width: 100%;
@@ -458,8 +460,8 @@ Services
     text-align: center;
 }
 .main-text-explanation {
-    color: var(--header-text);
-    margin-top: 3rem;
+    color: var(--text);
+    margin-top: 8rem;
     font-size: 36px;
     font-weight: 500;
     margin-left: 8rem;
@@ -468,7 +470,7 @@ Services
     width: 60rem;
 }
 .explanation {
-    color: #2d2d2d;
+    color: var(--text);
     margin-left: 10rem;
     font-weight: 400;
     font-size: 22px;
@@ -481,5 +483,11 @@ Services
     height: 50rem;
     border-radius: 20px;
     margin-left: 8rem;
-    margin-top: 8rem;
+    margin-top: 1.5rem;
+}
+.explanation-h {
+    color: var(--text);
+    font-size: 28px;
+    font-weight: 500;
+    margin-left: 8rem;
 }
