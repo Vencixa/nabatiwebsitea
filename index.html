@@ -17,28 +17,6 @@
     </head>
     <body>
 
-        <!--Form-->
-
-        <div class="shadow" id="shadow" onclick="toggleForm()"></div>
-
-        <div class="form-wrapper" id="form">
-                            
-            <form action="https://api.web3forms.com/submit" method="POST" class="form">
-
-                <input type="hidden" name="from_name" value="Dentist Apointment">
-                <input type="hidden" name="redirect" value="https://vencixa.github.io/nabatiwebsitea/form-submitted.html">
-                <input type="hidden" name="access_key" value="ca905848-0b91-4285-9ebf-42f5cf876f67">
-                <input class="form-name" type="text" name="subject" placeholder="Име" required>
-                <input class="form-number" type="text" name="Телефонен Номер" placeholder="Телефонен Номер" required>
-                <textarea class="form-details" name="Детайли" placeholder="Детайли" required></textarea>
-
-                <button class="form-submit" type="submit">Изпращане</button>
-
-                <i class="fas fa-times" onclick="toggleForm()"></i>
-
-            </form>
-        </div>
-
         <!--Header-->
 
         <header class="header" id="header">
@@ -48,7 +26,7 @@
                 </div>
                 <nav class="pc-navbar">
 
-                    <button class="appointment" id="appointment-button" onclick="toggleForm()">Запазване на Час</button>
+                    <a href="book-appointment.html"><button class="appointment" id="appointment-button">Запазете час</button></a>
                     <a href="" class="about-us">За нас</a>
                     <a href="services.html" class="services-header">Услуги</a>
 

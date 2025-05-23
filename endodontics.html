@@ -17,28 +17,6 @@
     </head>
     <body>
 
-        <!--Form-->
-
-        <div class="shadow" id="shadow" onclick="toggleForm()"></div>
-
-        <div class="form-wrapper" id="form">
-                            
-            <form action="https://api.web3forms.com/submit" method="POST" class="form">
-
-                <input type="hidden" name="from_name" value="Dentist Apointment">
-                <input type="hidden" name="redirect" value="https://vencixa.github.io/nabatiwebsitea/form-submitted.html">
-                <input type="hidden" name="access_key" value="ca905848-0b91-4285-9ebf-42f5cf876f67">
-                <input class="form-name" type="text" name="subject" placeholder="Име" required>
-                <input class="form-number" type="text" name="Телефонен Номер" placeholder="Телефонен Номер" required>
-                <textarea class="form-details" name="Детайли" placeholder="Детайли" required></textarea>
-
-                <button class="form-submit" type="submit">Изпращане</button>
-
-                <i class="fas fa-times" onclick="toggleForm()"></i>
-
-            </form>
-        </div>
-
         <!--Header-->
 
         <header class="header scrolled" id="header">
@@ -48,7 +26,7 @@
                 </div>
                 <nav class="pc-navbar">
 
-                    <button class="appointment" id="appointment-button" onclick="toggleForm()">Запазване на Час</button>
+                    <a href="book-appointment.html"><button class="appointment" id="appointment-button">Запазете час</button></a>
                     <a href="" class="about-us">За нас</a>
                     <a href="services.html" class="services-header">Услуги</a>
 
@@ -63,7 +41,42 @@
         
         <p class="main-text-explanation">Ендодонтия</p>
 
+            <div class="form-image-wrapper">
+
         <img src="images/services/rootcanal.png" class="explanation-image" alt="">
+
+        <div class="side-form-wrapper" id="form">
+                            
+            <form action="https://api.web3forms.com/submit" method="POST" class="side-form" id="side-form">
+
+                <input type="hidden" name="from_name" value="Dentist Apointment">
+                <input type="hidden" name="redirect" value="https://vencixa.github.io/nabatiwebsitea/form-submitted.html">
+                <input type="hidden" name="access_key" value="ca905848-0b91-4285-9ebf-42f5cf876f67">
+
+                <p class="side-form-top">Запазете час</p>
+
+                <input class="side-form-name" type="text" name="Име" placeholder="Име" required>
+                <input class="side-form-number" type="number" name="Телефонен Номер" placeholder="Телефонен Номер" required>
+                <input class="side-form-email" type="email" name="Имейл" placeholder="Имейл" required></input>
+
+                <select name="Услуга" id="service" class="side-form-service">
+                    <option value="">Изберете услуга</option>
+                    <option value="Преглед и план на лечение">Преглед и план на лечение</option>
+                    <option value="Профилактика">Профилактика</option>
+                    <option value="Консервативно зъболечение">Консервативно зъболечение</option>
+                    <option value="Естетична стоматология">Естетична стоматология</option>
+                    <option value="Ендодонтия">Ендодонтия</option>
+                    <option value="Протетика">Протетика</option>
+                    <option value="Орална хирургия">Орална хирургия</option>
+                    <option value="Пародонтология">Пародонтология</option>
+                    <option value="Имплантология">Имплантология</option>
+                </select>
+
+                <button class="side-form-submit" type="submit">Изпращане</button>
+
+            </form>
+        </div>
+    </div>
 
         <div class="explanation-wrapper">
 
